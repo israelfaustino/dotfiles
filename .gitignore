@@ -1,0 +1,2 @@
+# Ignore VIm's temp/swap files
+.*sw*
