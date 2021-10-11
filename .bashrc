@@ -97,7 +97,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -lF'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -126,3 +126,13 @@ if ! shopt -oq posix; then
 fi
 
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
+export HISTFILESIZE=
+export HISTSIZE=
+
+#my aliases
+alias acs="apt-cache search"
+alias acp="apt-cache policy"
+alias grep='grep --color=always'
+alias less='less -R'
+alias clnp='sudo apt autoremove -y && sudo apt autoclean -y'
+alias upgd='sudo apt update; sudo apt dist-upgrade -y'
