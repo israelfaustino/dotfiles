@@ -126,3 +126,13 @@ if ! shopt -oq posix; then
 fi
 
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
+export HISTFILESIZE=
+export HISTSIZE=
+
+#my aliases
+alias acs="apt-cache search"
+alias acp="apt-cache policy"
+alias grep='grep --color=always'
+alias less='less -R'
+alias clnp='sudo apt autoremove -y && sudo apt autoclean -y'
+alias upgd='sudo apt update; sudo apt dist-upgrade -y'
