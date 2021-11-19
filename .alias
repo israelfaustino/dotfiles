@@ -1,0 +1,21 @@
+## File for my default aliases
+
+# Standard aliases
+alias grep='grep --color=always'
+alias less='less -R'
+
+## Package manager aliases
+# ARCH pacman specific
+#alias locate='plocate'
+#alias pms='pacman -Ss'
+#alias pmi='sudo pacman -Sy'
+
+# Debian apt especific
+#alias acs="apt-cache search"
+#alias acp="apt-cache policy"
+#alias clnp='sudo apt autoremove -y && sudo apt autoclean -y'
+#alias upgd='sudo apt update; sudo apt dist-upgrade -y'
+
+# OpenSUSE zypper specific
+alias zypi='sudo zypper -n in'
+alias zyps='zypper se'
