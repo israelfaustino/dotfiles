@@ -77,12 +77,6 @@ set incsearch			" Searches for strings incrementally
 set ruler					" Show row and column ruler information
 set termguicolors	" Ignores terminal/GUI color scheme(?)
  
-" Tab settings
-set noexpandtab
-set tabstop=4
-set shiftwidth=4
-set smartindent		" Enable smart-indent
- 
 " Indent Lines Options
 let g:indentLine_concealcursor = "inc"
 let g:indentLine_conceallevel = 2
@@ -94,12 +88,21 @@ set noshowmode
 set laststatus=2
 
 let g:lightline = {
--      \ "colorscheme": "srcery",
--      \ 'active': {
--      \   'left': [ [ 'mode', 'paste' ],
--      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
--      \ },
--      \ 'component_function': {
--      \   'gitbranch': 'gitbranch#name'
--      \ },
--      \ }
+      \ "colorscheme": "srcery",
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gitbranch#name'
+      \ },
+      \ }
+
+" TAB settings
+set noexpandtab
+set shiftwidth=4
+set tabstop=4
+filetype plugin indent on
+"set smartindent		" Enable smart-indent 
+
+au BufRead,BufNewFile *** set noexpandtab
