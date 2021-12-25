@@ -60,6 +60,7 @@ color srcery
 "set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 "set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 set listchars=tab:→\ ,trail:∙,nbsp:•,eol:↲
+set listchars=tab:\ \ ,space:∙,nbsp:•,eol:↲
 set list
 set nocompatible	" be iMproved, required
 hi! link SpecialKey NonText
