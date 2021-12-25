@@ -2,12 +2,11 @@
 " TODO: Code refactoring
 " TODO: Make NERDTree usable
 
-
 " Vim-plug
 call plug#begin('~/.vim/plugged')
 
 " Syntax Highlighting Plugins
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 
 " NERDTree (File Browser)
 " Plug 'scrooloose/nerdtree'
@@ -34,7 +33,7 @@ Plug 'airblade/vim-gitgutter'       " Show git info on gutter
 
 Plug 'itchyny/vim-gitbranch'        " Show git info no ruler (lightline)
 
-"Plug 'jesseleite/vim-noh'           " Remove search highlighting when cursor is moved
+Plug 'jesseleite/vim-noh'           " Remove search highlighting when cursor is moved
 
 "Plug 'vim-scripts/AutoComplPop'
 
