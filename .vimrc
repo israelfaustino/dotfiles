@@ -2,12 +2,11 @@
 " TODO: Code refactoring
 " TODO: Make NERDTree usable
 
-
 " Vim-plug
 call plug#begin('~/.vim/plugged')
 
 " Syntax Highlighting Plugins
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 
 " NERDTree (File Browser)
 " Plug 'scrooloose/nerdtree'
@@ -34,7 +33,7 @@ Plug 'airblade/vim-gitgutter'       " Show git info on gutter
 
 Plug 'itchyny/vim-gitbranch'        " Show git info no ruler (lightline)
 
-"Plug 'jesseleite/vim-noh'           " Remove search highlighting when cursor is moved
+Plug 'jesseleite/vim-noh'           " Remove search highlighting when cursor is moved
 
 "Plug 'vim-scripts/AutoComplPop'
 
@@ -61,6 +60,7 @@ color srcery
 "set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 "set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 set listchars=tab:→\ ,trail:∙,nbsp:•,eol:↲
+set listchars=tab:\ \ ,space:∙,nbsp:•,eol:↲
 set list
 set nocompatible	" be iMproved, required
 hi! link SpecialKey NonText
@@ -77,12 +77,6 @@ set incsearch			" Searches for strings incrementally
 set ruler					" Show row and column ruler information
 set termguicolors	" Ignores terminal/GUI color scheme(?)
  
-" Tab settings
-set noexpandtab
-set tabstop=4
-set shiftwidth=4
-set smartindent		" Enable smart-indent
- 
 " Indent Lines Options
 let g:indentLine_concealcursor = "inc"
 let g:indentLine_conceallevel = 2
@@ -94,12 +88,21 @@ set noshowmode
 set laststatus=2
 
 let g:lightline = {
--      \ "colorscheme": "srcery",
--      \ 'active': {
--      \   'left': [ [ 'mode', 'paste' ],
--      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
--      \ },
--      \ 'component_function': {
--      \   'gitbranch': 'gitbranch#name'
--      \ },
--      \ }
+      \ "colorscheme": "srcery",
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gitbranch#name'
+      \ },
+      \ }
+
+" TAB settings
+set noexpandtab
+set shiftwidth=4
+set tabstop=4
+filetype plugin indent on
+"set smartindent		" Enable smart-indent 
+
+au BufRead,BufNewFile *** set noexpandtab
