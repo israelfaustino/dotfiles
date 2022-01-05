@@ -19,3 +19,4 @@ alias less='less -R'
 # OpenSUSE zypper specific
 alias zypi='sudo zypper -n in'
 alias zyps='zypper se'
+alias upd='sudo zypper ref & sudo zypper -y dup & sudo flatpak update -y'
